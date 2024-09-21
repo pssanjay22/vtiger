@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SmokeSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="SmokeTest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.crm.vtiger.campaigns.CreateCampaignTest">
+        <methods>
+          <include name="createCampaign"/>
+          <include name="closeBrowser"/>
+          <include name="signout"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- com.crm.vtiger.campaigns.CreateCampaignTest -->
+      <class name="com.crm.vtiger.CreateContact.CreateContactTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="createContact"/>
+          <include name="signout"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- com.crm.vtiger.CreateContact.CreateContactTest -->
+      <class name="com.crm.vtiger.CreateOrganization.CreateOrganizationTest">
+        <methods>
+          <include name="createOrganization"/>
+          <include name="closeBrowser"/>
+          <include name="signout"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- com.crm.vtiger.CreateOrganization.CreateOrganizationTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [SmokeSuite] -->
